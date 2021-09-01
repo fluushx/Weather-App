@@ -15,6 +15,8 @@ class WeatherViewController: UIViewController {
     var resultSearch: [String:Day] = [:]
     var arrayDay = [Day]()
     var descriptionDay = [Day]()
+    var localy : String?
+    let urlString = "http://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=bo5dpxv31l1r&v=3.0"
 
     //MARK: - tableView
     let tableView:UITableView = {
@@ -30,7 +32,6 @@ class WeatherViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 100
-        
         
     }
     //MARK: - viewDidLayoutSubviews
@@ -57,15 +58,12 @@ class WeatherViewController: UIViewController {
             self.arrayDay.append(jsonResult.day["4"]!)
             self.arrayDay.append(jsonResult.day["5"]!)
             self.descriptionDay.append(jsonResult.day["1"]!)
-            
-         
+            self.localy = jsonResult.location
               DispatchQueue.main.async {
                 self.resultSearch = jsonResult.day
                 self.tableView.tableHeaderView = self.createTableHeader()
                 self.tableView.reloadData()
               }
-           
-            
           }
           catch {
               print(error)
@@ -183,9 +181,9 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             tempDescription.textAlignment = .center
             tempDescription.backgroundColor = .clear
             tempDescription.numberOfLines = 0
-            tempDescription.font = UIFont.boldSystemFont(ofSize: 20)
+            tempDescription.font = UIFont.boldSystemFont(ofSize: 15)
             tempDescription.translatesAutoresizingMaskIntoConstraints = false
-            tempDescription.text = "Sensación de \(descriptionDay[0].tempmax)°"
+            tempDescription.text = "Sensación de \(descriptionDay[0].tempmax)° en \(localy!)"
             return tempDescription
         }()
         
@@ -202,7 +200,7 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         minTemperatureLabel.frame = CGRect(x: iconWeather.frame.size.width + 70, y: 80, width: view.frame.size.width-300 , height: 50)
         iconDirection.frame = CGRect(x: 260, y: 20, width: view.frame.size.width-300, height: 80)
         labelDirection.frame = CGRect(x: 260, y: 110, width: view.frame.size.width-300, height: 75)
-        tempDescription.frame = CGRect(x: 20, y: 165, width: 160, height:30)
+        tempDescription.frame = CGRect(x: 20, y: 165, width: 330, height:30)
         return headerView
     }
     
