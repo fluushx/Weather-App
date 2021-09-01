@@ -19,7 +19,7 @@ class WeatherTableViewCell: UITableViewCell {
       let weekdayLabel =  UILabel()
         weekdayLabel.textColor = .black
         weekdayLabel.textAlignment = .center
-        weekdayLabel.backgroundColor = .link
+        weekdayLabel.backgroundColor = .clear
         weekdayLabel.translatesAutoresizingMaskIntoConstraints = false
          
     return weekdayLabel
@@ -29,7 +29,7 @@ class WeatherTableViewCell: UITableViewCell {
       let minimumTemperatureLabel =  UILabel()
         minimumTemperatureLabel.textColor = .black
         minimumTemperatureLabel.textAlignment = .center
-        minimumTemperatureLabel.backgroundColor = .red
+        minimumTemperatureLabel.backgroundColor = .clear
         minimumTemperatureLabel.translatesAutoresizingMaskIntoConstraints = false
     return minimumTemperatureLabel
     }()
@@ -39,7 +39,7 @@ class WeatherTableViewCell: UITableViewCell {
         maximumTemperatureLabel.textColor = .black
         maximumTemperatureLabel.textAlignment = .center
         maximumTemperatureLabel.translatesAutoresizingMaskIntoConstraints = false
-        maximumTemperatureLabel.backgroundColor = .green
+        maximumTemperatureLabel.backgroundColor = .clear
        
     return maximumTemperatureLabel
     }()
@@ -49,17 +49,17 @@ class WeatherTableViewCell: UITableViewCell {
         iconWeather.contentMode = .scaleAspectFit
         iconWeather.layer.masksToBounds = true
         iconWeather.layer.cornerRadius = 10
-        iconWeather.backgroundColor = .red
+        iconWeather.backgroundColor = .clear
         iconWeather.translatesAutoresizingMaskIntoConstraints = false
         return iconWeather
     }()
     
     let iconDirection:UIImageView = {
         let iconDirection = UIImageView()
-        iconDirection.contentMode = .scaleAspectFit
+        iconDirection.contentMode = .scaleAspectFill
         iconDirection.layer.masksToBounds = true
         iconDirection.layer.cornerRadius = 10
-        iconDirection.backgroundColor = .red
+        iconDirection.backgroundColor = .clear
         iconDirection.translatesAutoresizingMaskIntoConstraints = false
         return iconDirection
     }()
@@ -67,7 +67,7 @@ class WeatherTableViewCell: UITableViewCell {
         let labelDirection = UILabel()
         labelDirection.textColor = .black
         labelDirection.textAlignment = .center
-        labelDirection.backgroundColor = .link
+        labelDirection.backgroundColor = .clear
         labelDirection.numberOfLines = 0
         labelDirection.translatesAutoresizingMaskIntoConstraints = false
         labelDirection.font = UIFont.systemFont(ofSize: 15.0)

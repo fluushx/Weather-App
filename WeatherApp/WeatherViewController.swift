@@ -13,8 +13,8 @@ class WeatherViewController: UIViewController {
     
     //MARK: - Variables
     var resultSearch: [String:Day] = [:]
-    var descriptionCurrent : [String:Day] = [:]
-    var temp:Temperatures?
+    var arrayDay = [Day]()
+    var descriptionDay = [Day]()
 
     //MARK: - tableView
     let tableView:UITableView = {
@@ -30,6 +30,7 @@ class WeatherViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 100
+        
         
     }
     //MARK: - viewDidLayoutSubviews
@@ -50,18 +51,18 @@ class WeatherViewController: UIViewController {
            }
           do{
               let jsonResult = try JSONDecoder().decode(Temperatures.self, from: data)
-            let current = jsonResult.day
-            self.temp = jsonResult
+            self.arrayDay.append(jsonResult.day["1"]!)
+            self.arrayDay.append(jsonResult.day["2"]!)
+            self.arrayDay.append(jsonResult.day["3"]!)
+            self.arrayDay.append(jsonResult.day["4"]!)
+            self.arrayDay.append(jsonResult.day["5"]!)
+            self.descriptionDay.append(jsonResult.day["1"]!)
             
-            self.descriptionCurrent =  current
+         
               DispatchQueue.main.async {
                 self.resultSearch = jsonResult.day
                 self.tableView.tableHeaderView = self.createTableHeader()
                 self.tableView.reloadData()
-                
-                 
-           
-                 
               }
            
             
@@ -88,61 +89,16 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         let currentKey = keysArray[indexPath.row]
         let currentIndexKey:Day = resultSearch[currentKey]!
         
-        let setKey = resultSearch.keys
-        let orderKeys = setKey.sorted(by: <)
-      
-        
-        let currentOrderKey = currentKey.sorted{
-            $1 <= $0
-        }
-//        print(currentOrderKey)
-        
-        
-        
-//        let sorted = resultSearch.sorted { $0.key < $1.key }
-//        let keysArraySorted = Array(sorted.map({ $0.key }))
-//        let valuesArraySorted = Array(sorted.map({ $0.value }))
-        
-        func sortWithKeys(_ dict: [String: Any]) -> [String: Any] {
-            let sorted = dict.sorted(by: { $0.key < $1.key })
-            var newDict: [String: Any] = [:]
-            for sortedDict in sorted {
-                newDict[sortedDict.key] = sortedDict.value
-                //print(newDict)
-            }
-            return newDict
-        }
-        
-//        if currentKey.count > 1 {
-//            let setKey = resultSearch.keys
-//            let orderKeys = setKey.sorted(by: <)
-//            print(orderKeys)
-//        }
-        
-         
-        
-        
-        
-//        let setKey = resultSearch.keys
-//        let orderKeys = setKey.sorted(by: <)
-//        print(orderKeys)
-////
-//        let setName = currentIndexKey.name.sorted(by: >)
-//        print("\(currentIndexKey.name)")
-//        let valueName = currentIndexKey.name
-//        let orderValue = valueName.sorted{
-//            return $0 < $1
-//        }
-       
-        
-        cell.weekdayLabel.text = "\(currentIndexKey.name)"
+        let nameDay = arrayDay[indexPath.row].name
+        cell.weekdayLabel.text = "\(nameDay)"
         cell.minimumTemperatureLabel.text = "\(currentIndexKey.tempmin)°"
         cell.maximumTemperatureLabel.text = "\(currentIndexKey.tempmax)°"
         cell.labelDirection.text = "\(currentIndexKey.wind.speed) - \(currentIndexKey.wind.gusts)\n Km/h"
-   
-        cell.iconWeather.image = UIImage(named: "")
-        cell.iconDirection.image = UIImage(named: "")
         
+        let iconImage = arrayDay[indexPath.row].symbolValue2
+        cell.iconWeather.image = UIImage(named: iconImage)
+        cell.iconDirection.image = UIImage(named: "wind")
+   
         return cell
     }
     
@@ -158,7 +114,7 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         
         let headerView : UIView = {
             let headerView = UIView()
-            headerView.backgroundColor = .red
+            headerView.backgroundColor = UIColor(red: 51/255.0, green: 138/255.0, blue: 255/255.0, alpha: 1.0)
             headerView.translatesAutoresizingMaskIntoConstraints = false
             headerView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 200)
             return headerView
@@ -166,20 +122,14 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         
         let dayDescriptionLabel: UILabel = {
           let dayDescriptionLabel =  UILabel()
-            dayDescriptionLabel.textColor = .black
+            dayDescriptionLabel.textColor = .white
             dayDescriptionLabel.textAlignment = .left
-            dayDescriptionLabel.backgroundColor = .link
+            dayDescriptionLabel.backgroundColor = .clear
             dayDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
             dayDescriptionLabel.numberOfLines = 0
-            
-//            let setKey = resultSearch.keys
-//            let orderKeys = setKey.sorted(by: <)
-//            let firstKey = orderKeys.first
-            
-//            dayDescriptionLabel.text = "\(firstKey!)"
-            //print(orderKeys)
-            
-        return dayDescriptionLabel
+            dayDescriptionLabel.font = UIFont.boldSystemFont(ofSize: 25) 
+            dayDescriptionLabel.text = "\(descriptionDay[0].symbolDescription)"
+            return dayDescriptionLabel
         }()
         
         let iconWeather: UIImageView = {
@@ -187,18 +137,21 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             iconWeather.contentMode = .scaleAspectFit
             iconWeather.layer.masksToBounds = true
             iconWeather.layer.cornerRadius = 10
-            iconWeather.backgroundColor = .green
+            iconWeather.backgroundColor = .clear
             iconWeather.translatesAutoresizingMaskIntoConstraints = false
+            iconWeather.image = UIImage(named: "\(descriptionDay[0].symbolValue2)")
             return iconWeather
         }()
         
-        let actualTemperatureLabel: UILabel = {
-          let actualTemperatureLabel =  UILabel()
-            actualTemperatureLabel.textColor = .black
-            actualTemperatureLabel.textAlignment = .center
-            actualTemperatureLabel.backgroundColor =  .yellow
-            actualTemperatureLabel.translatesAutoresizingMaskIntoConstraints = false
-        return actualTemperatureLabel
+        let minTemperatureLabel: UILabel = {
+          let minTemperatureLabel =  UILabel()
+            minTemperatureLabel.textColor = .white
+            minTemperatureLabel.textAlignment = .center
+            minTemperatureLabel.backgroundColor = .clear
+            minTemperatureLabel.font = UIFont.boldSystemFont(ofSize: 20)
+            minTemperatureLabel.translatesAutoresizingMaskIntoConstraints = false
+            minTemperatureLabel.text = "\(descriptionDay[0].tempmin)°"
+        return minTemperatureLabel
         }()
         
         let iconDirection:UIImageView = {
@@ -206,35 +159,50 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             iconDirection.contentMode = .scaleAspectFit
             iconDirection.layer.masksToBounds = true
             iconDirection.layer.cornerRadius = 10
-            iconDirection.backgroundColor = .purple
             iconDirection.translatesAutoresizingMaskIntoConstraints = false
+            iconDirection.image = UIImage(named: "wind")
             return iconDirection
         }()
         
         let labelDirection:UILabel = {
             let labelDirection = UILabel()
-            labelDirection.textColor = .black
+            labelDirection.textColor = .white
             labelDirection.textAlignment = .center
-            labelDirection.backgroundColor = .blue
+            labelDirection.backgroundColor = .clear
             labelDirection.numberOfLines = 0
             labelDirection.translatesAutoresizingMaskIntoConstraints = false
-            labelDirection.font = UIFont.systemFont(ofSize: 15.0)
+            labelDirection.font = UIFont.boldSystemFont(ofSize: 18)
+            labelDirection.text = "\(descriptionDay[0].wind.speed) - \(descriptionDay[0].wind.gusts) Km/h"
             
             return labelDirection
         }()
         
+        let tempDescription: UILabel = {
+            let tempDescription = UILabel()
+            tempDescription.textColor = .white
+            tempDescription.textAlignment = .center
+            tempDescription.backgroundColor = .clear
+            tempDescription.numberOfLines = 0
+            tempDescription.font = UIFont.boldSystemFont(ofSize: 20)
+            tempDescription.translatesAutoresizingMaskIntoConstraints = false
+            tempDescription.text = "Sensación de \(descriptionDay[0].tempmax)°"
+            return tempDescription
+        }()
+        
         headerView.addSubview(dayDescriptionLabel)
         headerView.addSubview(iconWeather)
-        headerView.addSubview(actualTemperatureLabel)
+        headerView.addSubview(minTemperatureLabel)
         headerView.addSubview(iconDirection)
         headerView.addSubview(labelDirection)
+        headerView.addSubview(tempDescription)
         
         
-        dayDescriptionLabel.frame =  CGRect(x: 20, y: 20, width: view.frame.size.width-195, height: 50)
-        iconWeather.frame = CGRect(x: 20, y: 80, width: view.frame.size.width-280, height: 80)
-        actualTemperatureLabel.frame = CGRect(x: iconWeather.frame.size.width + 40, y: 80, width: view.frame.size.width-300 , height: 80)
+        dayDescriptionLabel.frame =  CGRect(x: 20, y: 10, width: view.frame.size.width-195, height: 50)
+        iconWeather.frame = CGRect(x: 50, y: 60, width: view.frame.size.width-280, height: 100)
+        minTemperatureLabel.frame = CGRect(x: iconWeather.frame.size.width + 70, y: 80, width: view.frame.size.width-300 , height: 50)
         iconDirection.frame = CGRect(x: 260, y: 20, width: view.frame.size.width-300, height: 80)
         labelDirection.frame = CGRect(x: 260, y: 110, width: view.frame.size.width-300, height: 75)
+        tempDescription.frame = CGRect(x: 20, y: 165, width: 160, height:30)
         return headerView
     }
     
