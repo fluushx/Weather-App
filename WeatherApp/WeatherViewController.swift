@@ -10,16 +10,19 @@ import UIKit
 import Foundation
 
 class WeatherViewController: UIViewController {
+    
+    //MARK: - Variables
     var resultSearch: [String:Day] = [:]
     var descriptionCurrent : [String:Day] = [:]
+    var temp:Temperatures?
 
-    
+    //MARK: - tableView
     let tableView:UITableView = {
         let tableView = UITableView()
         tableView.register(WeatherTableViewCell.self, forCellReuseIdentifier: WeatherTableViewCell.identefier)
         return tableView
     }()
-    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchWeatherApi()
@@ -29,10 +32,12 @@ class WeatherViewController: UIViewController {
         tableView.rowHeight = 100
         
     }
+    //MARK: - viewDidLayoutSubviews
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame =  CGRect(x: 0, y: view.safeAreaInsets.top, width: view.bounds.size.width, height: view.bounds.size.height)
     }
+    //MARK: - fetchAPI
     func fetchWeatherApi (){
        let urlString = "http://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=bo5dpxv31l1r&v=3.0"
        
@@ -46,11 +51,16 @@ class WeatherViewController: UIViewController {
           do{
               let jsonResult = try JSONDecoder().decode(Temperatures.self, from: data)
             let current = jsonResult.day
+            self.temp = jsonResult
+            
             self.descriptionCurrent =  current
               DispatchQueue.main.async {
                 self.resultSearch = jsonResult.day
                 self.tableView.tableHeaderView = self.createTableHeader()
                 self.tableView.reloadData()
+                
+                 
+           
                  
               }
            
@@ -65,7 +75,7 @@ class WeatherViewController: UIViewController {
     
 }
  
-
+//MARK: - tableView functions
 extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return resultSearch.count
@@ -77,6 +87,31 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         let keysArray = Array(resultSearch.keys)
         let currentKey = keysArray[indexPath.row]
         let currentIndexKey:Day = resultSearch[currentKey]!
+        
+        let setKey = resultSearch.keys
+        let orderKeys = setKey.sorted(by: <)
+      
+        
+        let currentOrderKey = currentKey.sorted{
+            $1 <= $0
+        }
+//        print(currentOrderKey)
+        
+        
+        
+//        let sorted = resultSearch.sorted { $0.key < $1.key }
+//        let keysArraySorted = Array(sorted.map({ $0.key }))
+//        let valuesArraySorted = Array(sorted.map({ $0.value }))
+        
+        func sortWithKeys(_ dict: [String: Any]) -> [String: Any] {
+            let sorted = dict.sorted(by: { $0.key < $1.key })
+            var newDict: [String: Any] = [:]
+            for sortedDict in sorted {
+                newDict[sortedDict.key] = sortedDict.value
+                //print(newDict)
+            }
+            return newDict
+        }
         
 //        if currentKey.count > 1 {
 //            let setKey = resultSearch.keys
@@ -91,14 +126,15 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
 //        let setKey = resultSearch.keys
 //        let orderKeys = setKey.sorted(by: <)
 //        print(orderKeys)
-//
+////
 //        let setName = currentIndexKey.name.sorted(by: >)
 //        print("\(currentIndexKey.name)")
 //        let valueName = currentIndexKey.name
 //        let orderValue = valueName.sorted{
 //            return $0 < $1
 //        }
-//        print("\(orderValue)")
+       
+        
         cell.weekdayLabel.text = "\(currentIndexKey.name)"
         cell.minimumTemperatureLabel.text = "\(currentIndexKey.tempmin)°"
         cell.maximumTemperatureLabel.text = "\(currentIndexKey.tempmax)°"
@@ -110,10 +146,13 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    //MARK: - didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    
+    //MARK: - createTableHeader
     func createTableHeader () -> UIView{
         
         
@@ -133,11 +172,11 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             dayDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
             dayDescriptionLabel.numberOfLines = 0
             
-            let setKey = resultSearch.keys
-            let orderKeys = setKey.sorted(by: <)
-            let firstKey = orderKeys.first
+//            let setKey = resultSearch.keys
+//            let orderKeys = setKey.sorted(by: <)
+//            let firstKey = orderKeys.first
             
-            dayDescriptionLabel.text = "\(firstKey!)"
+//            dayDescriptionLabel.text = "\(firstKey!)"
             //print(orderKeys)
             
         return dayDescriptionLabel
@@ -189,6 +228,8 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         headerView.addSubview(actualTemperatureLabel)
         headerView.addSubview(iconDirection)
         headerView.addSubview(labelDirection)
+        
+        
         dayDescriptionLabel.frame =  CGRect(x: 20, y: 20, width: view.frame.size.width-195, height: 50)
         iconWeather.frame = CGRect(x: 20, y: 80, width: view.frame.size.width-280, height: 80)
         actualTemperatureLabel.frame = CGRect(x: iconWeather.frame.size.width + 40, y: 80, width: view.frame.size.width-300 , height: 80)
