@@ -8,6 +8,8 @@
 
 import UIKit
 import Foundation
+import HGPlaceholders
+
 
 class WeatherViewController: UIViewController {
     
@@ -16,11 +18,11 @@ class WeatherViewController: UIViewController {
     var arrayDay = [Day]()
     var descriptionDay = [Day]()
     var localy : String?
-    let urlString = "http://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=bo5dpxv31l1r&v=3.0"
+    
 
     //MARK: - tableView
-    let tableView:UITableView = {
-        let tableView = UITableView()
+    let tableView:TableView = {
+        let tableView = TableView()
         tableView.register(WeatherTableViewCell.self, forCellReuseIdentifier: WeatherTableViewCell.identefier)
         return tableView
     }()
@@ -32,6 +34,7 @@ class WeatherViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 100
+        tableView.showLoadingPlaceholder()
         
     }
     //MARK: - viewDidLayoutSubviews
@@ -43,6 +46,8 @@ class WeatherViewController: UIViewController {
     func fetchWeatherApi (){
        let urlString = "http://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=bo5dpxv31l1r&v=3.0"
        
+        
+        
        guard let url = URL(string: urlString) else {
            return
        }
@@ -51,22 +56,29 @@ class WeatherViewController: UIViewController {
                return
            }
           do{
-              let jsonResult = try JSONDecoder().decode(Temperatures.self, from: data)
-            self.arrayDay.append(jsonResult.day["1"]!)
-            self.arrayDay.append(jsonResult.day["2"]!)
-            self.arrayDay.append(jsonResult.day["3"]!)
-            self.arrayDay.append(jsonResult.day["4"]!)
-            self.arrayDay.append(jsonResult.day["5"]!)
-            self.descriptionDay.append(jsonResult.day["1"]!)
-            self.localy = jsonResult.location
-              DispatchQueue.main.async {
-                self.resultSearch = jsonResult.day
-                self.tableView.tableHeaderView = self.createTableHeader()
-                self.tableView.reloadData()
-              }
+            var jsonResult = try JSONDecoder().decode(Temperatures.self, from: data)
+            
+             
+            DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
+                self.arrayDay.append(jsonResult.day["1"]!)
+                self.arrayDay.append(jsonResult.day["2"]!)
+                self.arrayDay.append(jsonResult.day["3"]!)
+                self.arrayDay.append(jsonResult.day["4"]!)
+                self.arrayDay.append(jsonResult.day["5"]!)
+                self.descriptionDay.append(jsonResult.day["1"]!)
+                self.localy = jsonResult.location
+                DispatchQueue.main.async {
+                  self.resultSearch = jsonResult.day
+                  self.tableView.tableHeaderView = self.createTableHeader()
+                  self.tableView.showDefault()
+                  self.tableView.reloadData()
+                }
+            })
+               
           }
           catch {
-              print(error)
+            self.tableView.showErrorPlaceholder()
+            self.tableView.reloadData()
           }
       }
       task.resume()
