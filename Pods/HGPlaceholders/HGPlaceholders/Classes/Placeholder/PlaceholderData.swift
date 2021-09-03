@@ -40,9 +40,8 @@ public struct PlaceholderData {
     public static var noResults: PlaceholderData {
         var noResultsStyle = PlaceholderData()
         noResultsStyle.image = PlaceholdersProvider.image(named: "hg_default-no_results")
-        noResultsStyle.title = NSLocalizedString("No results founds", comment: "")
-        noResultsStyle.subtitle = NSLocalizedString("We can’t find what\nyou’re looking for.", comment: "")
-        noResultsStyle.action = NSLocalizedString("Try Again!", comment: "")
+        noResultsStyle.title = NSLocalizedString("No se encontraron resultados", comment: "")
+     
         
         return noResultsStyle
     }
@@ -73,8 +72,8 @@ public struct PlaceholderData {
         var noConnectionStyle = PlaceholderData()
         noConnectionStyle.image = PlaceholdersProvider.image(named: "hg_default-no_connection")
         noConnectionStyle.title = NSLocalizedString("Whoops!", comment: "")
-        noConnectionStyle.subtitle = NSLocalizedString("Slow or no internet connections.\nPlease check your internet settings", comment: "")
-        noConnectionStyle.action = NSLocalizedString("Try Again!", comment: "")
+        noConnectionStyle.subtitle = NSLocalizedString("Error de conexión, revise su conexión", comment: "")
+       
         
         return noConnectionStyle
     }

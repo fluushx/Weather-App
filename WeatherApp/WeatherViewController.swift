@@ -80,7 +80,7 @@ class WeatherViewController: UIViewController {
                   self.tableView.tableHeaderView = self.createTableHeader()
                   self.tableView.showDefault()
                   self.tableView.reloadData()
-                    self.animation()
+                  self.animation()
                 }
             })
                
@@ -110,8 +110,8 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
         
         let nameDay = arrayDay[indexPath.row].name
         cell.weekdayLabel.text = "\(nameDay)"
-        cell.minimumTemperatureLabel.text = "\(currentIndexKey.tempmin)°"
-        cell.maximumTemperatureLabel.text = "\(currentIndexKey.tempmax)°"
+        cell.minimumTemperatureLabel.text = "\(currentIndexKey.tempmin)°C"
+        cell.maximumTemperatureLabel.text = "\(currentIndexKey.tempmax)°C"
         cell.labelDirection.text = "\(currentIndexKey.wind.speed) - \(currentIndexKey.wind.gusts)\n Km/h"
         
         let iconImage = arrayDay[indexPath.row].symbolValue2
@@ -169,7 +169,7 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             minTemperatureLabel.backgroundColor = .clear
             minTemperatureLabel.font = UIFont.boldSystemFont(ofSize: 20)
             minTemperatureLabel.translatesAutoresizingMaskIntoConstraints = false
-            minTemperatureLabel.text = "\(descriptionDay[0].tempmin)°"
+            minTemperatureLabel.text = "\(descriptionDay[0].tempmin)°C"
         return minTemperatureLabel
         }()
         
@@ -204,7 +204,7 @@ extension WeatherViewController : UITableViewDelegate,UITableViewDataSource{
             tempDescription.numberOfLines = 0
             tempDescription.font = UIFont.boldSystemFont(ofSize: 15)
             tempDescription.translatesAutoresizingMaskIntoConstraints = false
-            tempDescription.text = "Sensación de \(descriptionDay[0].tempmax)° en \(localy!)"
+            tempDescription.text = "Sensación de \(descriptionDay[0].tempmax)°C en \(localy!)"
             return tempDescription
         }()
         
