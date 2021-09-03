@@ -7,4 +7,5 @@ target 'WeatherApp' do
 
   # Pods for WeatherApp
 pod 'HGPlaceholders' 
+pod 'ViewAnimator' 
 end

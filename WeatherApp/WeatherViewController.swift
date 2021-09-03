@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import HGPlaceholders
+import ViewAnimator
 
 
 class WeatherViewController: UIViewController {
@@ -37,10 +38,18 @@ class WeatherViewController: UIViewController {
         tableView.showLoadingPlaceholder()
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     //MARK: - viewDidLayoutSubviews
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame =  CGRect(x: 0, y: view.safeAreaInsets.top, width: view.bounds.size.width, height: view.bounds.size.height)
+    }
+    //MARK: - setUpAnimation
+    func animation(){
+        let animation = AnimationType.from(direction: .top, offset: 200)
+        UIView.animate(views:tableView.visibleCells,animations: [animation])
     }
     //MARK: - fetchAPI
     func fetchWeatherApi (){
@@ -58,7 +67,6 @@ class WeatherViewController: UIViewController {
           do{
             var jsonResult = try JSONDecoder().decode(Temperatures.self, from: data)
             
-             
             DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
                 self.arrayDay.append(jsonResult.day["1"]!)
                 self.arrayDay.append(jsonResult.day["2"]!)
@@ -72,6 +80,7 @@ class WeatherViewController: UIViewController {
                   self.tableView.tableHeaderView = self.createTableHeader()
                   self.tableView.showDefault()
                   self.tableView.reloadData()
+                    self.animation()
                 }
             })
                

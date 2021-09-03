@@ -7,37 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0659DE430B554F7F3C6DE1D84AD9F15C /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038201667430D21CE1ABEBEC4E0E2E2 /* PlaceholdersProvider.swift */; };
-		136EBDC1EE14C44073A528832341B5FA /* CellPlaceholding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF2AFACB9A1F7719CCCC6B84D46D5 /* CellPlaceholding.swift */; };
-		203EDBDCF05EE5D0002A5A2C96E4718F /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D965FCD82D08E12F63D5514A208D4183 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2182F491BEA0C691DD1F92E3BEDA3496 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE099E0A3E53894E2004E597DFC1F4A /* TableView.swift */; };
-		2A508BE531F6AF47735628045F75BC42 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D921A0596436269BDBDBF81B9CCE43 /* ErrorMessage.swift */; };
-		38CE4E02100760E34A59B8EAD2F0D188 /* PlaceholderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = E703205993B01422BAB063FC066EEAE7 /* PlaceholderTableViewCell.xib */; };
-		39C9B1477219BFC5593910C0CFAF396A /* PlaceholdersProvider+Defauls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E268D6998A51475D8B5C93B89A2A5 /* PlaceholdersProvider+Defauls.swift */; };
-		4265183A0139BA85F255C96E0B038E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		52A54A2E640D088428DF4D4C395B34E7 /* PlaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B8D7557347566B06656656518377E /* PlaceholderData.swift */; };
-		58BF9CD35AA726C358CD1267087907A4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052CAF12A3CE5770D3368F22EE89FF8 /* Placeholder.swift */; };
-		603B256CF111578D910A821222F92D18 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56787B68B77CD10C570C202E9F8875F /* Reusable.swift */; };
-		7DF868E8808FB6BA8F7C71D2ACF6C221 /* CollectionView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A4E0EB150CD7A1D326EA03E3CA5D32 /* CollectionView+Switcher.swift */; };
-		8A91BB3699C2AB6B4382E1D80DE7A661 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7348E0983BD9A003F60268F800D8C /* CollectionView.swift */; };
+		0297B6CEA49CD9906A7152047F9D25E8 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C59859F530F6DB2D0DD7134EE1599F /* Directions.swift */; };
+		0659DE430B554F7F3C6DE1D84AD9F15C /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2501DA686F28E17F150142FAA8AD900 /* PlaceholdersProvider.swift */; };
+		136EBDC1EE14C44073A528832341B5FA /* CellPlaceholding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB21EC7589867C61F6E7A9DD5D10BA /* CellPlaceholding.swift */; };
+		1CBF1B8BDAB928BC351DBD6D0A6D9F03 /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D965FCD82D08E12F63D5514A208D4183 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200585A1123F7DB8A6EAFE3AC750BCB8 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B137878C24ECA71966DF436019293 /* Animation.swift */; };
+		2182F491BEA0C691DD1F92E3BEDA3496 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399D26CA336DE782E6CD80FDF390E16 /* TableView.swift */; };
+		2A508BE531F6AF47735628045F75BC42 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578B388E9B9CF644201B50168B59C76F /* ErrorMessage.swift */; };
+		2E412C6A1AD87A9730668C4541F6ADE6 /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2914D0363EFF39C66EE74A5BBFA936 /* UITableView + ViewAnimator.swift */; };
+		38CE4E02100760E34A59B8EAD2F0D188 /* PlaceholderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = BC7E189749B2A647922D2606DCC9D0F0 /* PlaceholderTableViewCell.xib */; };
+		39C9B1477219BFC5593910C0CFAF396A /* PlaceholdersProvider+Defauls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA62688D6E794C8F1B5A50CE20CD86 /* PlaceholdersProvider+Defauls.swift */; };
+		4DB696D789B24C0A43E7A9BAFDB915E0 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674FFA0624AC8E1C1801C7A191BCA5B /* ViewAnimator.swift */; };
+		52A54A2E640D088428DF4D4C395B34E7 /* PlaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0288F39D306EA0D34E72CEF6EC12F821 /* PlaceholderData.swift */; };
+		58BF9CD35AA726C358CD1267087907A4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDF7684870739BCC2399E3D002F048 /* Placeholder.swift */; };
+		5A3D5BA18B02E9B7838C818EC0D2B2B8 /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663FDAFF5D728B65934214D74E7B2448 /* ViewAnimator-dummy.m */; };
+		603B256CF111578D910A821222F92D18 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68AA9D577CEB8B6C78FD79DFBAEB105 /* Reusable.swift */; };
+		6C1655F9467C75866A51E9A2C31C73C2 /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717DDB269F0C5F93AF6CFD5E9C01D2C3 /* UICollectionView + ViewAnimator.swift */; };
+		7DF868E8808FB6BA8F7C71D2ACF6C221 /* CollectionView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B274953ACD71B064AE73C02299BD03 /* CollectionView+Switcher.swift */; };
+		86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 742992D0C754AF62EA82624DD25CB0B4 /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A91BB3699C2AB6B4382E1D80DE7A661 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275012EAF02E858EA970E10B8E64ABF3 /* CollectionView.swift */; };
 		8AC3BD29EC764C5AA9F816A5694E20A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9D87C8B662817D730928D0EC47092AF5 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF5D53AE1C4E85C6609431ACDD7167 /* PlaceholderCollectionViewCell.swift */; };
-		A2C1EE92CAA18098183CC5A8BC0EA636 /* PlaceholderCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FADCE042EEACCEC7BC147699487A /* PlaceholderCollectionViewCell.xib */; };
-		A9A62C0AA6300562A7DB7E1241D1E01B /* HGPlaceholders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536D97212A3567C8C9F913BC6FD74A2 /* HGPlaceholders-dummy.m */; };
-		ACA1E19DC0060841135FAF7FEB296CA7 /* HGPlaceholders-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD34F3E50E6633220D1EC0E0A5C20D01 /* HGPlaceholders-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C727D495DE96825D74985E5AB30128E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB822807855778ADC6F0ED2C9CAE5BC /* Assets.xcassets */; };
-		C817C9E2C5516A27D9C883AF13E9B94D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0799EC36B4E1C8F6822D070D169167E /* NibLoadable.swift */; };
-		C9963C5E12CDC4145992EF2BA41C1DD8 /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2045B79F2BDB7C38285D4E25C23DD /* Pods-WeatherApp-dummy.m */; };
-		CF00498318FF143AD8E7C6F748B6E013 /* PlaceholderDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D15813DEB5ADD80FA83D2B4AFA693 /* PlaceholderDataSourceDelegate.swift */; };
-		D1161DA9B13AA8328E53F68F89B8E770 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5302FD320C456B0B926681A21CD220 /* PlaceholderTableViewCell.swift */; };
-		D454290C02A0C71316E81E874E4282BC /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CADFF4897E82092EDF9A20B9E1B6E /* PlaceholderStyle.swift */; };
-		D7A7AFC3F1447214711FFDCCE888EBF6 /* PlaceholderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049DB0321956812DAA723D0D81E1435 /* PlaceholderKey.swift */; };
-		EE2F9043DA85D64FA3678A0BB1A7918C /* TableView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE39368A49BF7B030C3848CE9FC430 /* TableView+Switcher.swift */; };
-		FAA733981D61EDA13C7639CB1E69EE38 /* PlaceholdersSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6005E6BA92582C7ED8B5972F9F0FC /* PlaceholdersSwitcher.swift */; };
+		9D87C8B662817D730928D0EC47092AF5 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C85D9B2FC67E4A36BB7B1B47D6DE5 /* PlaceholderCollectionViewCell.swift */; };
+		9E7545AAC5C0EF94E43BED83707FFF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A2C1EE92CAA18098183CC5A8BC0EA636 /* PlaceholderCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D2F56BCBAD05ED3E937B991040787 /* PlaceholderCollectionViewCell.xib */; };
+		A9A62C0AA6300562A7DB7E1241D1E01B /* HGPlaceholders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B7FFF9ACFFB74A9AE13A90034C923E /* HGPlaceholders-dummy.m */; };
+		ACA1E19DC0060841135FAF7FEB296CA7 /* HGPlaceholders-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEE3778FBEECA96BBC5A7F1690D46BF /* HGPlaceholders-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71E6657F233FDE74771C4F3D628C2F4 /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21725A7B24A889B5EB0632EDFD6260 /* ViewAnimatorConfig.swift */; };
+		BAEAF25296F78E959D02B95F0481A582 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978535933021EE68075E19BBFC5366A9 /* AnimationType.swift */; };
+		C1A2D63AD19F56BCF7D050D9E2E41C64 /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2045B79F2BDB7C38285D4E25C23DD /* Pods-WeatherApp-dummy.m */; };
+		C727D495DE96825D74985E5AB30128E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC631654877E4640BBFE06AF10BE268C /* Assets.xcassets */; };
+		C817C9E2C5516A27D9C883AF13E9B94D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927BE767B8C510285BC7EFEE1C75BB95 /* NibLoadable.swift */; };
+		CF00498318FF143AD8E7C6F748B6E013 /* PlaceholderDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA380F99B494B9009DE956490AE5B67C /* PlaceholderDataSourceDelegate.swift */; };
+		D1161DA9B13AA8328E53F68F89B8E770 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9FDD127F93CBB80ACF0C39A4817BC4 /* PlaceholderTableViewCell.swift */; };
+		D454290C02A0C71316E81E874E4282BC /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50DDF2D87431991390BB21A80F8232 /* PlaceholderStyle.swift */; };
+		D7A7AFC3F1447214711FFDCCE888EBF6 /* PlaceholderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD76D754E31BF08C0BF463445B5228D /* PlaceholderKey.swift */; };
+		EE2F9043DA85D64FA3678A0BB1A7918C /* TableView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5561BEDEF466D3702184EDB78AE17 /* TableView+Switcher.swift */; };
+		F9E155522D0683582D26FB1DA6164375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FAA733981D61EDA13C7639CB1E69EE38 /* PlaceholdersSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B74D144377CDC0522577833DDC8712D /* PlaceholdersSwitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09839415D0AF6D3BC35474795E57763E /* PBXContainerItemProxy */ = {
+		054DDE1B369A2DC1F5B6B2EE4B4FF593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
+		};
+		5B46FDD96121A41B7463E9B7546B5F68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,47 +64,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F5302FD320C456B0B926681A21CD220 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderTableViewCell.swift; path = HGPlaceholders/Classes/Cells/PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
-		14A4E0EB150CD7A1D326EA03E3CA5D32 /* CollectionView+Switcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CollectionView+Switcher.swift"; path = "HGPlaceholders/Classes/Views/CollectionView+Switcher.swift"; sourceTree = "<group>"; };
-		14F68465B3967E4A589125820C152E6B /* HGPlaceholders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGPlaceholders.release.xcconfig; sourceTree = "<group>"; };
-		199E268D6998A51475D8B5C93B89A2A5 /* PlaceholdersProvider+Defauls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PlaceholdersProvider+Defauls.swift"; path = "HGPlaceholders/Classes/PlaceholdersProvider/PlaceholdersProvider+Defauls.swift"; sourceTree = "<group>"; };
+		0288F39D306EA0D34E72CEF6EC12F821 /* PlaceholderData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderData.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderData.swift; sourceTree = "<group>"; };
+		0608DA4C4CB65F5D9B35D8E223210328 /* ViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewAnimator-Info.plist"; sourceTree = "<group>"; };
+		0A21725A7B24A889B5EB0632EDFD6260 /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = Sources/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
+		113C85D9B2FC67E4A36BB7B1B47D6DE5 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderCollectionViewCell.swift; path = HGPlaceholders/Classes/Cells/PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
+		146A441F4AAD36DCC2C109B3F9B49FC6 /* HGPlaceholders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGPlaceholders.release.xcconfig; sourceTree = "<group>"; };
+		1DBDF7684870739BCC2399E3D002F048 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = HGPlaceholders/Classes/Placeholder/Placeholder.swift; sourceTree = "<group>"; };
 		2049CA4BCEF836A438FBD40FB40902BA /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		2536D97212A3567C8C9F913BC6FD74A2 /* HGPlaceholders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HGPlaceholders-dummy.m"; sourceTree = "<group>"; };
-		3A6D15813DEB5ADD80FA83D2B4AFA693 /* PlaceholderDataSourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderDataSourceDelegate.swift; path = HGPlaceholders/Classes/PlaceholdersProvider/PlaceholderDataSourceDelegate.swift; sourceTree = "<group>"; };
-		3FB822807855778ADC6F0ED2C9CAE5BC /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HGPlaceholders/Assets/Assets.xcassets; sourceTree = "<group>"; };
-		4049DB0321956812DAA723D0D81E1435 /* PlaceholderKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderKey.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderKey.swift; sourceTree = "<group>"; };
-		4594A4C6BAAC82B81DF97C8D0DD85AE0 /* HGPlaceholders-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HGPlaceholders-Info.plist"; sourceTree = "<group>"; };
+		2674FFA0624AC8E1C1801C7A191BCA5B /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = Sources/ViewAnimator.swift; sourceTree = "<group>"; };
+		275012EAF02E858EA970E10B8E64ABF3 /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = HGPlaceholders/Classes/Views/CollectionView.swift; sourceTree = "<group>"; };
+		33BFBECB3177C6993C6352FDF0FFE3C3 /* ViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewAnimator.modulemap; sourceTree = "<group>"; };
+		41AE941267E50A0E8807729638CA5E33 /* HGPlaceholders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HGPlaceholders.modulemap; sourceTree = "<group>"; };
+		45BB21EC7589867C61F6E7A9DD5D10BA /* CellPlaceholding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellPlaceholding.swift; path = HGPlaceholders/Classes/Protocols/CellPlaceholding.swift; sourceTree = "<group>"; };
+		4977C6D455C2706089B4D1522EA4AB3F /* ViewAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.release.xcconfig; sourceTree = "<group>"; };
 		4E9904B18C8C32370B98F074B2453516 /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F3D2F56BCBAD05ED3E937B991040787 /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PlaceholderCollectionViewCell.xib; path = HGPlaceholders/Classes/Cells/PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
 		5163207A4C5441588D6768F9543C2BCC /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp.framework; path = "Pods-WeatherApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55672A420C38E730D866909B6994A04E /* HGPlaceholders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HGPlaceholders.modulemap; sourceTree = "<group>"; };
+		578B388E9B9CF644201B50168B59C76F /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = HGPlaceholders/Classes/Placeholder/ErrorMessage.swift; sourceTree = "<group>"; };
+		5B74D144377CDC0522577833DDC8712D /* PlaceholdersSwitcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholdersSwitcher.swift; path = HGPlaceholders/Classes/Protocols/PlaceholdersSwitcher.swift; sourceTree = "<group>"; };
 		6057EBFF7EF99394CEBFAA12C63F277F /* Pods-WeatherApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-Info.plist"; sourceTree = "<group>"; };
+		663FDAFF5D728B65934214D74E7B2448 /* ViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-dummy.m"; sourceTree = "<group>"; };
 		6AFCEF7739B1579F8A6DBE8F94445B46 /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
-		7052CAF12A3CE5770D3368F22EE89FF8 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = HGPlaceholders/Classes/Placeholder/Placeholder.swift; sourceTree = "<group>"; };
+		6D2B137878C24ECA71966DF436019293 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Sources/Protocols/Animation.swift; sourceTree = "<group>"; };
+		717DDB269F0C5F93AF6CFD5E9C01D2C3 /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView + ViewAnimator.swift"; path = "Sources/Extensions/UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76D921A0596436269BDBDBF81B9CCE43 /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = HGPlaceholders/Classes/Placeholder/ErrorMessage.swift; sourceTree = "<group>"; };
-		7B604223056F85288B816938CF316DC4 /* HGPlaceholders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-prefix.pch"; sourceTree = "<group>"; };
-		7EE6005E6BA92582C7ED8B5972F9F0FC /* PlaceholdersSwitcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholdersSwitcher.swift; path = HGPlaceholders/Classes/Protocols/PlaceholdersSwitcher.swift; sourceTree = "<group>"; };
-		8A75FADCE042EEACCEC7BC147699487A /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PlaceholderCollectionViewCell.xib; path = HGPlaceholders/Classes/Cells/PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
-		8FE7348E0983BD9A003F60268F800D8C /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = HGPlaceholders/Classes/Views/CollectionView.swift; sourceTree = "<group>"; };
+		742992D0C754AF62EA82624DD25CB0B4 /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		7FD76D754E31BF08C0BF463445B5228D /* PlaceholderKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderKey.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderKey.swift; sourceTree = "<group>"; };
+		82B274953ACD71B064AE73C02299BD03 /* CollectionView+Switcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CollectionView+Switcher.swift"; path = "HGPlaceholders/Classes/Views/CollectionView+Switcher.swift"; sourceTree = "<group>"; };
+		87B7FFF9ACFFB74A9AE13A90034C923E /* HGPlaceholders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HGPlaceholders-dummy.m"; sourceTree = "<group>"; };
+		89C59859F530F6DB2D0DD7134EE1599F /* Directions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Directions.swift; path = Sources/Models/Directions.swift; sourceTree = "<group>"; };
 		9172F376EAE980339FE5DCBF09AE8A00 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
-		956CADFF4897E82092EDF9A20B9E1B6E /* PlaceholderStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderStyle.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderStyle.swift; sourceTree = "<group>"; };
+		927BE767B8C510285BC7EFEE1C75BB95 /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = HGPlaceholders/Classes/Protocols/NibLoadable.swift; sourceTree = "<group>"; };
+		92F899297A9EF982D29F837C49A0FDC4 /* HGPlaceholders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-prefix.pch"; sourceTree = "<group>"; };
+		978535933021EE68075E19BBFC5366A9 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Models/AnimationType.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C56787B68B77CD10C570C202E9F8875F /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = HGPlaceholders/Classes/Protocols/Reusable.swift; sourceTree = "<group>"; };
-		C66D41B022473C530A466EA7189C15B6 /* HGPlaceholders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGPlaceholders.debug.xcconfig; sourceTree = "<group>"; };
+		A1BA62688D6E794C8F1B5A50CE20CD86 /* PlaceholdersProvider+Defauls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PlaceholdersProvider+Defauls.swift"; path = "HGPlaceholders/Classes/PlaceholdersProvider/PlaceholdersProvider+Defauls.swift"; sourceTree = "<group>"; };
+		A2501DA686F28E17F150142FAA8AD900 /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholdersProvider.swift; path = HGPlaceholders/Classes/PlaceholdersProvider/PlaceholdersProvider.swift; sourceTree = "<group>"; };
+		A399D26CA336DE782E6CD80FDF390E16 /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = HGPlaceholders/Classes/Views/TableView.swift; sourceTree = "<group>"; };
+		A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB50DDF2D87431991390BB21A80F8232 /* PlaceholderStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderStyle.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderStyle.swift; sourceTree = "<group>"; };
+		AF309257326308F413C9972A7FE6E543 /* ViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		B6A5561BEDEF466D3702184EDB78AE17 /* TableView+Switcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableView+Switcher.swift"; path = "HGPlaceholders/Classes/Views/TableView+Switcher.swift"; sourceTree = "<group>"; };
+		BC7E189749B2A647922D2606DCC9D0F0 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PlaceholderTableViewCell.xib; path = HGPlaceholders/Classes/Cells/PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
+		BFEE3778FBEECA96BBC5A7F1690D46BF /* HGPlaceholders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-umbrella.h"; sourceTree = "<group>"; };
+		C6EB346DFD9E7E6057027B2D08EA2BB5 /* HGPlaceholders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGPlaceholders.debug.xcconfig; sourceTree = "<group>"; };
 		C9F2045B79F2BDB7C38285D4E25C23DD /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
+		CC631654877E4640BBFE06AF10BE268C /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HGPlaceholders/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		CE496D14DA0EA98EFF05A07F4C8E64A5 /* HGPlaceholders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HGPlaceholders.framework; path = HGPlaceholders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2BCF2AFACB9A1F7719CCCC6B84D46D5 /* CellPlaceholding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellPlaceholding.swift; path = HGPlaceholders/Classes/Protocols/CellPlaceholding.swift; sourceTree = "<group>"; };
+		CF2914D0363EFF39C66EE74A5BBFA936 /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView + ViewAnimator.swift"; path = "Sources/Extensions/UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		D35279B55287A848F9665AC91D2CEDC8 /* ViewAnimator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.debug.xcconfig; sourceTree = "<group>"; };
+		D68AA9D577CEB8B6C78FD79DFBAEB105 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = HGPlaceholders/Classes/Protocols/Reusable.swift; sourceTree = "<group>"; };
 		D889B97725C513ACAD07321FB45B986A /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
-		D8CE39368A49BF7B030C3848CE9FC430 /* TableView+Switcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableView+Switcher.swift"; path = "HGPlaceholders/Classes/Views/TableView+Switcher.swift"; sourceTree = "<group>"; };
 		D965FCD82D08E12F63D5514A208D4183 /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
-		DD34F3E50E6633220D1EC0E0A5C20D01 /* HGPlaceholders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-umbrella.h"; sourceTree = "<group>"; };
-		DFEF5D53AE1C4E85C6609431ACDD7167 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderCollectionViewCell.swift; path = HGPlaceholders/Classes/Cells/PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
-		E038201667430D21CE1ABEBEC4E0E2E2 /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholdersProvider.swift; path = HGPlaceholders/Classes/PlaceholdersProvider/PlaceholdersProvider.swift; sourceTree = "<group>"; };
-		E703205993B01422BAB063FC066EEAE7 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PlaceholderTableViewCell.xib; path = HGPlaceholders/Classes/Cells/PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
-		F0799EC36B4E1C8F6822D070D169167E /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = HGPlaceholders/Classes/Protocols/NibLoadable.swift; sourceTree = "<group>"; };
+		E64DA7A5DDE90E13A85FDD69AF745A60 /* HGPlaceholders-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HGPlaceholders-Info.plist"; sourceTree = "<group>"; };
 		F30FB17DD77D3BF2435C14BF0823CBB1 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
-		F68B8D7557347566B06656656518377E /* PlaceholderData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderData.swift; path = HGPlaceholders/Classes/Placeholder/PlaceholderData.swift; sourceTree = "<group>"; };
-		FFE099E0A3E53894E2004E597DFC1F4A /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = HGPlaceholders/Classes/Views/TableView.swift; sourceTree = "<group>"; };
+		FA380F99B494B9009DE956490AE5B67C /* PlaceholderDataSourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderDataSourceDelegate.swift; path = HGPlaceholders/Classes/PlaceholdersProvider/PlaceholderDataSourceDelegate.swift; sourceTree = "<group>"; };
+		FE9FDD127F93CBB80ACF0C39A4817BC4 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderTableViewCell.swift; path = HGPlaceholders/Classes/Cells/PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,25 +131,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B34833C194AFD50CA581121AEAD6D782 /* Frameworks */ = {
+		4A2378F5402332EF626D5691EDEC2CD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4265183A0139BA85F255C96E0B038E0E /* Foundation.framework in Frameworks */,
+				F9E155522D0683582D26FB1DA6164375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7545AAC5C0EF94E43BED83707FFF88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		197537F7E2A36B6791BCE5BFEA9432D0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				58FB5FB638BE93556C8B3EF0257F0F97 /* HGPlaceholders */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,66 +158,74 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		58FB5FB638BE93556C8B3EF0257F0F97 /* HGPlaceholders */ = {
+		71CC62A27E2FEAC3C36A1D2CFDE56CFA /* HGPlaceholders */ = {
 			isa = PBXGroup;
 			children = (
-				D2BCF2AFACB9A1F7719CCCC6B84D46D5 /* CellPlaceholding.swift */,
-				8FE7348E0983BD9A003F60268F800D8C /* CollectionView.swift */,
-				14A4E0EB150CD7A1D326EA03E3CA5D32 /* CollectionView+Switcher.swift */,
-				76D921A0596436269BDBDBF81B9CCE43 /* ErrorMessage.swift */,
-				F0799EC36B4E1C8F6822D070D169167E /* NibLoadable.swift */,
-				7052CAF12A3CE5770D3368F22EE89FF8 /* Placeholder.swift */,
-				DFEF5D53AE1C4E85C6609431ACDD7167 /* PlaceholderCollectionViewCell.swift */,
-				8A75FADCE042EEACCEC7BC147699487A /* PlaceholderCollectionViewCell.xib */,
-				F68B8D7557347566B06656656518377E /* PlaceholderData.swift */,
-				3A6D15813DEB5ADD80FA83D2B4AFA693 /* PlaceholderDataSourceDelegate.swift */,
-				4049DB0321956812DAA723D0D81E1435 /* PlaceholderKey.swift */,
-				E038201667430D21CE1ABEBEC4E0E2E2 /* PlaceholdersProvider.swift */,
-				199E268D6998A51475D8B5C93B89A2A5 /* PlaceholdersProvider+Defauls.swift */,
-				7EE6005E6BA92582C7ED8B5972F9F0FC /* PlaceholdersSwitcher.swift */,
-				956CADFF4897E82092EDF9A20B9E1B6E /* PlaceholderStyle.swift */,
-				0F5302FD320C456B0B926681A21CD220 /* PlaceholderTableViewCell.swift */,
-				E703205993B01422BAB063FC066EEAE7 /* PlaceholderTableViewCell.xib */,
-				C56787B68B77CD10C570C202E9F8875F /* Reusable.swift */,
-				FFE099E0A3E53894E2004E597DFC1F4A /* TableView.swift */,
-				D8CE39368A49BF7B030C3848CE9FC430 /* TableView+Switcher.swift */,
-				9253072F8283E3BDC39F560D7D47D897 /* Resources */,
-				ADBE1485A0D7FB83FC26E57AA2DB5F07 /* Support Files */,
+				45BB21EC7589867C61F6E7A9DD5D10BA /* CellPlaceholding.swift */,
+				275012EAF02E858EA970E10B8E64ABF3 /* CollectionView.swift */,
+				82B274953ACD71B064AE73C02299BD03 /* CollectionView+Switcher.swift */,
+				578B388E9B9CF644201B50168B59C76F /* ErrorMessage.swift */,
+				927BE767B8C510285BC7EFEE1C75BB95 /* NibLoadable.swift */,
+				1DBDF7684870739BCC2399E3D002F048 /* Placeholder.swift */,
+				113C85D9B2FC67E4A36BB7B1B47D6DE5 /* PlaceholderCollectionViewCell.swift */,
+				4F3D2F56BCBAD05ED3E937B991040787 /* PlaceholderCollectionViewCell.xib */,
+				0288F39D306EA0D34E72CEF6EC12F821 /* PlaceholderData.swift */,
+				FA380F99B494B9009DE956490AE5B67C /* PlaceholderDataSourceDelegate.swift */,
+				7FD76D754E31BF08C0BF463445B5228D /* PlaceholderKey.swift */,
+				A2501DA686F28E17F150142FAA8AD900 /* PlaceholdersProvider.swift */,
+				A1BA62688D6E794C8F1B5A50CE20CD86 /* PlaceholdersProvider+Defauls.swift */,
+				5B74D144377CDC0522577833DDC8712D /* PlaceholdersSwitcher.swift */,
+				AB50DDF2D87431991390BB21A80F8232 /* PlaceholderStyle.swift */,
+				FE9FDD127F93CBB80ACF0C39A4817BC4 /* PlaceholderTableViewCell.swift */,
+				BC7E189749B2A647922D2606DCC9D0F0 /* PlaceholderTableViewCell.xib */,
+				D68AA9D577CEB8B6C78FD79DFBAEB105 /* Reusable.swift */,
+				A399D26CA336DE782E6CD80FDF390E16 /* TableView.swift */,
+				B6A5561BEDEF466D3702184EDB78AE17 /* TableView+Switcher.swift */,
+				BD627A207852D4049481DA5794079317 /* Resources */,
+				99746EC54CB2FD3458ED3B88129B0D05 /* Support Files */,
 			);
 			name = HGPlaceholders;
 			path = HGPlaceholders;
 			sourceTree = "<group>";
 		};
-		9253072F8283E3BDC39F560D7D47D897 /* Resources */ = {
+		99746EC54CB2FD3458ED3B88129B0D05 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3FB822807855778ADC6F0ED2C9CAE5BC /* Assets.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		ADBE1485A0D7FB83FC26E57AA2DB5F07 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				55672A420C38E730D866909B6994A04E /* HGPlaceholders.modulemap */,
-				2536D97212A3567C8C9F913BC6FD74A2 /* HGPlaceholders-dummy.m */,
-				4594A4C6BAAC82B81DF97C8D0DD85AE0 /* HGPlaceholders-Info.plist */,
-				7B604223056F85288B816938CF316DC4 /* HGPlaceholders-prefix.pch */,
-				DD34F3E50E6633220D1EC0E0A5C20D01 /* HGPlaceholders-umbrella.h */,
-				C66D41B022473C530A466EA7189C15B6 /* HGPlaceholders.debug.xcconfig */,
-				14F68465B3967E4A589125820C152E6B /* HGPlaceholders.release.xcconfig */,
+				41AE941267E50A0E8807729638CA5E33 /* HGPlaceholders.modulemap */,
+				87B7FFF9ACFFB74A9AE13A90034C923E /* HGPlaceholders-dummy.m */,
+				E64DA7A5DDE90E13A85FDD69AF745A60 /* HGPlaceholders-Info.plist */,
+				92F899297A9EF982D29F837C49A0FDC4 /* HGPlaceholders-prefix.pch */,
+				BFEE3778FBEECA96BBC5A7F1690D46BF /* HGPlaceholders-umbrella.h */,
+				C6EB346DFD9E7E6057027B2D08EA2BB5 /* HGPlaceholders.debug.xcconfig */,
+				146A441F4AAD36DCC2C109B3F9B49FC6 /* HGPlaceholders.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/HGPlaceholders";
 			sourceTree = "<group>";
 		};
-		BA3333D7D2A682B7318024917695F9C8 /* Products */ = {
+		ADDF6470BB9B8190E6AD9330A6CF17D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE496D14DA0EA98EFF05A07F4C8E64A5 /* HGPlaceholders.framework */,
-				5163207A4C5441588D6768F9543C2BCC /* Pods_WeatherApp.framework */,
+				71CC62A27E2FEAC3C36A1D2CFDE56CFA /* HGPlaceholders */,
+				B44E41DE1AD11BF502F5A86A37265DCD /* ViewAnimator */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B44E41DE1AD11BF502F5A86A37265DCD /* ViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				6D2B137878C24ECA71966DF436019293 /* Animation.swift */,
+				978535933021EE68075E19BBFC5366A9 /* AnimationType.swift */,
+				89C59859F530F6DB2D0DD7134EE1599F /* Directions.swift */,
+				717DDB269F0C5F93AF6CFD5E9C01D2C3 /* UICollectionView + ViewAnimator.swift */,
+				CF2914D0363EFF39C66EE74A5BBFA936 /* UITableView + ViewAnimator.swift */,
+				2674FFA0624AC8E1C1801C7A191BCA5B /* ViewAnimator.swift */,
+				0A21725A7B24A889B5EB0632EDFD6260 /* ViewAnimatorConfig.swift */,
+				BBD1978A02D5CD78A333A95ACF6633A6 /* Support Files */,
+			);
+			name = ViewAnimator;
+			path = ViewAnimator;
 			sourceTree = "<group>";
 		};
 		BA7475683495C208CFED4D3FCE9EFB0D /* Pods-WeatherApp */ = {
@@ -205,13 +245,46 @@
 			path = "Target Support Files/Pods-WeatherApp";
 			sourceTree = "<group>";
 		};
+		BBD1978A02D5CD78A333A95ACF6633A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33BFBECB3177C6993C6352FDF0FFE3C3 /* ViewAnimator.modulemap */,
+				663FDAFF5D728B65934214D74E7B2448 /* ViewAnimator-dummy.m */,
+				0608DA4C4CB65F5D9B35D8E223210328 /* ViewAnimator-Info.plist */,
+				AF309257326308F413C9972A7FE6E543 /* ViewAnimator-prefix.pch */,
+				742992D0C754AF62EA82624DD25CB0B4 /* ViewAnimator-umbrella.h */,
+				D35279B55287A848F9665AC91D2CEDC8 /* ViewAnimator.debug.xcconfig */,
+				4977C6D455C2706089B4D1522EA4AB3F /* ViewAnimator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
+		BD627A207852D4049481DA5794079317 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC631654877E4640BBFE06AF10BE268C /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C807D869CD49989058C9FEEC3E380570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE496D14DA0EA98EFF05A07F4C8E64A5 /* HGPlaceholders.framework */,
+				5163207A4C5441588D6768F9543C2BCC /* Pods_WeatherApp.framework */,
+				A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				197537F7E2A36B6791BCE5BFEA9432D0 /* Pods */,
-				BA3333D7D2A682B7318024917695F9C8 /* Products */,
+				ADDF6470BB9B8190E6AD9330A6CF17D4 /* Pods */,
+				C807D869CD49989058C9FEEC3E380570 /* Products */,
 				EE6EDD90640915451AFC1E7FA634A6E8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -235,11 +308,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		98510508330009574F0248F47B3962A0 /* Headers */ = {
+		A00D220DEEBAC932095FE90A824B855A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203EDBDCF05EE5D0002A5A2C96E4718F /* Pods-WeatherApp-umbrella.h in Headers */,
+				1CBF1B8BDAB928BC351DBD6D0A6D9F03 /* Pods-WeatherApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01257361E898E374FB0A6911FB063C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,21 +355,40 @@
 		};
 		2FB376565AEB9484417E14E6A834885C /* Pods-WeatherApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37BF690614198EB1549183C2D4E500CF /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */;
+			buildConfigurationList = 88526109FF0C051AC0060914CDFBA948 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */;
 			buildPhases = (
-				98510508330009574F0248F47B3962A0 /* Headers */,
-				B4E852A3C7A22F060A2E52FBB208849D /* Sources */,
-				B34833C194AFD50CA581121AEAD6D782 /* Frameworks */,
-				E86849A4D222829B133BEC68C9482293 /* Resources */,
+				A00D220DEEBAC932095FE90A824B855A /* Headers */,
+				A2F0CAB2008BF79523B998773E2115BE /* Sources */,
+				4A2378F5402332EF626D5691EDEC2CD0 /* Frameworks */,
+				A66A046AA2AF44F8A46EE1B70B647B46 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CEDC4D7D4685E8F8836A24D78E36FF76 /* PBXTargetDependency */,
+				642806FFF88581B5231FE8B35518E99E /* PBXTargetDependency */,
+				B7689D673F6DAB2E2CD26B330BE2EE6C /* PBXTargetDependency */,
 			);
 			name = "Pods-WeatherApp";
 			productName = "Pods-WeatherApp";
 			productReference = 5163207A4C5441588D6768F9543C2BCC /* Pods_WeatherApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */;
+			buildPhases = (
+				C01257361E898E374FB0A6911FB063C7 /* Headers */,
+				2F1A877E1FF0BBFCBEE697C7656DB687 /* Sources */,
+				D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */,
+				2954910303CBA399A078839A2F6CEC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimator;
+			productName = ViewAnimator;
+			productReference = A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,17 +409,32 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BA3333D7D2A682B7318024917695F9C8 /* Products */;
+			productRefGroup = C807D869CD49989058C9FEEC3E380570 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				03360B543985C5710F2B2276AE96E32D /* HGPlaceholders */,
 				2FB376565AEB9484417E14E6A834885C /* Pods-WeatherApp */,
+				91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2954910303CBA399A078839A2F6CEC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66A046AA2AF44F8A46EE1B70B647B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C31707157A98E9DF4F959AC39E3CFA3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,16 +443,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86849A4D222829B133BEC68C9482293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F1A877E1FF0BBFCBEE697C7656DB687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200585A1123F7DB8A6EAFE3AC750BCB8 /* Animation.swift in Sources */,
+				BAEAF25296F78E959D02B95F0481A582 /* AnimationType.swift in Sources */,
+				0297B6CEA49CD9906A7152047F9D25E8 /* Directions.swift in Sources */,
+				6C1655F9467C75866A51E9A2C31C73C2 /* UICollectionView + ViewAnimator.swift in Sources */,
+				2E412C6A1AD87A9730668C4541F6ADE6 /* UITableView + ViewAnimator.swift in Sources */,
+				5A3D5BA18B02E9B7838C818EC0D2B2B8 /* ViewAnimator-dummy.m in Sources */,
+				4DB696D789B24C0A43E7A9BAFDB915E0 /* ViewAnimator.swift in Sources */,
+				B71E6657F233FDE74771C4F3D628C2F4 /* ViewAnimatorConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F6E5404E17C3EFEE5FDF42F327AA393 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,22 +489,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4E852A3C7A22F060A2E52FBB208849D /* Sources */ = {
+		A2F0CAB2008BF79523B998773E2115BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9963C5E12CDC4145992EF2BA41C1DD8 /* Pods-WeatherApp-dummy.m in Sources */,
+				C1A2D63AD19F56BCF7D050D9E2E41C64 /* Pods-WeatherApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CEDC4D7D4685E8F8836A24D78E36FF76 /* PBXTargetDependency */ = {
+		642806FFF88581B5231FE8B35518E99E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HGPlaceholders;
 			target = 03360B543985C5710F2B2276AE96E32D /* HGPlaceholders */;
-			targetProxy = 09839415D0AF6D3BC35474795E57763E /* PBXContainerItemProxy */;
+			targetProxy = 5B46FDD96121A41B7463E9B7546B5F68 /* PBXContainerItemProxy */;
+		};
+		B7689D673F6DAB2E2CD26B330BE2EE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = 054DDE1B369A2DC1F5B6B2EE4B4FF593 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,7 +581,45 @@
 			};
 			name = Debug;
 		};
-		1D8DA60E064DA830BD830D4B1DC58761 /* Debug */ = {
+		19FDFC2275BF4747C65C105C29FE792B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30FB17DD77D3BF2435C14BF0823CBB1 /* Pods-WeatherApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EB331C92F96689CF8027DEEF0E392DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9172F376EAE980339FE5DCBF09AE8A00 /* Pods-WeatherApp.debug.xcconfig */;
 			buildSettings = {
@@ -489,9 +656,78 @@
 			};
 			name = Debug;
 		};
+		4484B04365D1B1B5238BA2DFC39464D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35279B55287A848F9665AC91D2CEDC8 /* ViewAnimator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		467D7C197CFFBD1D1074B67B5E849842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4977C6D455C2706089B4D1522EA4AB3F /* ViewAnimator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5B397A081BC8BDA2CD44AB2867876446 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14F68465B3967E4A589125820C152E6B /* HGPlaceholders.release.xcconfig */;
+			baseConfigurationReference = 146A441F4AAD36DCC2C109B3F9B49FC6 /* HGPlaceholders.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -526,7 +762,7 @@
 		};
 		89CF5CB7B17DF7313C69001E054E66A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C66D41B022473C530A466EA7189C15B6 /* HGPlaceholders.debug.xcconfig */;
+			baseConfigurationReference = C6EB346DFD9E7E6057027B2D08EA2BB5 /* HGPlaceholders.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -620,56 +856,9 @@
 			};
 			name = Release;
 		};
-		AE5E20F39AC9B9583670A55A246EC5D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30FB17DD77D3BF2435C14BF0823CBB1 /* Pods-WeatherApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37BF690614198EB1549183C2D4E500CF /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D8DA60E064DA830BD830D4B1DC58761 /* Debug */,
-				AE5E20F39AC9B9583670A55A246EC5D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -684,6 +873,24 @@
 			buildConfigurations = (
 				89CF5CB7B17DF7313C69001E054E66A2 /* Debug */,
 				5B397A081BC8BDA2CD44AB2867876446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88526109FF0C051AC0060914CDFBA948 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB331C92F96689CF8027DEEF0E392DC /* Debug */,
+				19FDFC2275BF4747C65C105C29FE792B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4484B04365D1B1B5238BA2DFC39464D1 /* Debug */,
+				467D7C197CFFBD1D1074B67B5E849842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
